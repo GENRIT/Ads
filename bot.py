@@ -1,7 +1,8 @@
+import os
 import telebot
 from telebot import types
 
-API_TOKEN = '7305892783:AAEPYSCoF2PQuUxdTToS1zlEYvR9yZv4gjs'
+API_TOKEN = os.getenv('7305892783:AAEPYSCoF2PQuUxdTToS1zlEYvR9yZv4gjs')
 bot = telebot.TeleBot(API_TOKEN)
 
 # Словарь для хранения информации о постах пользователей
